@@ -2,10 +2,17 @@
 This is a boilerplate project to start developing with Kola
 
 ## Prerequisites
-* NodeJS
+* [NodeJS](https://nodejs.org)
 * NPM (comes bundled with NodeJS)
 * Gulp
+```shell
+npm install gulp -g
+```
 * Domer (optional, if you don't use Domer for HTML templating)
+```shell
+npm install domer -g
+```
+
 
 ## Gulp
 ### Build
