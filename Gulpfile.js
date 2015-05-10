@@ -33,9 +33,9 @@ gulp.task('build', function() {
                 "module": "commonjs"
             }))
 
-    commonjs.js
-        .pipe(gulpif(options.debug !== false, sourcemaps.write()))
-        .pipe(gulp.dest('build'))
+    return commonjs.js
+            .pipe(gulpif(options.debug !== false, sourcemaps.write()))
+            .pipe(gulp.dest('build'))
 })
 
 gulp.task('bundle', ['build'], function() {
@@ -73,6 +73,6 @@ gulp.task('release', ['build'], function() {
 })
 
 
-gulp.task('auto', ['bundle'], function() {
+gulp.task('auto', ['run'], function() {
     gulp.watch(['src/**'], ['bundle']);
 })
