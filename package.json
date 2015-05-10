@@ -7,9 +7,10 @@
     "test": "test"
   },
   "dependencies": {
-    "kola-signals": "^0.1.1",
     "kola": "^0.1.2",
-    "kola-hooks": "^0.0.5"
+    "kola-hooks": "^0.0.5",
+    "kola-signals": "^0.1.1",
+    "superagent": "^1.2.0"
   },
   "devDependencies": {
     "browserify": "^9.0.3",
@@ -25,6 +26,10 @@
     "typescript": "^1.4.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/staticfunction/kola-starter.git",
+    "type": "git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
